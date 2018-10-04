@@ -1,10 +1,8 @@
 <?php
-class galeriaController {
+class galeriaController extends Controller{
     public function index() {
-        echo 'Página de galeria';
-    }
+        $data = ['qt'=>123];
 
-    public function abrir($id) {
-        echo 'Abrindo galeria:'.$id;
+        $this->loadTemplate('galeria',$data);
     }
 }
