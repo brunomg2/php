@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Meu Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?= BASE_URL; ?>assets/css/style.css" />
     
 </head>
 <body>
@@ -14,6 +14,6 @@
     <a href="<?= BASE_URL; ?>galeria">Galería</a>
     <hr>
     <?php $this->loadViewInTemplate($viewName,$viewData); ?>
-    <script src="assets/js/script.js"></script>
+    <script src="<?= BASE_URL ;?>assets/js/script.js"></script>
 </body>
 </html>
